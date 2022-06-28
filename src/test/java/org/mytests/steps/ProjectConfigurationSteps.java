@@ -25,7 +25,8 @@ public class ProjectConfigurationSteps {
         projectSetupFill(project.getPrefix(), project.getCode());
     }
 
-    public static void projectGeneralFill(String name, String desc, String domain, String framework, String scale, String language, String verification) {
+    public static void projectGeneralFill(String name, String desc, String domain, String framework,
+                                          String scale, String language, String verification) {
         projectConfigurationPage.getProjectName().setValue(name);
         projectConfigurationPage.getProjectDescription().setValue(desc);
         projectConfigurationPage.getProjectDomain().select(domain);
@@ -52,7 +53,9 @@ public class ProjectConfigurationSteps {
         projectConfigurationPage.getContinueButton().click(ElementArea.JS);
     }
 
-    public static void projectFlexFill(String crowdInv, String spPrice, List<String> selectLocation, List<String> rejectLocations, List<String> autoSkills, List<String> testSkills, String onboardingContent) {
+    public static void projectFlexFill(String crowdInv, String spPrice, List<String> selectLocation,
+                                       List<String> rejectLocations, List<String> autoSkills,
+                                       List<String> testSkills, String onboardingContent) {
         projectConfigurationPage.getCrowdInvitations().stream().filter(el -> el.text().contains(crowdInv))
                 .findFirst().orElseThrow(() -> runtimeException("")).click();
         projectConfigurationPage.getSpPrice().setValue(spPrice);
@@ -136,7 +139,8 @@ public class ProjectConfigurationSteps {
         projectTeamFill(project.getOwners(), project.getManagers(), project.getCore());
     }
 
-    public static void projectTestCaseManualFill(String connectionType, String cvsSourceType, String syncableField, String path) {
+    public static void projectTestCaseManualFill(String connectionType, String cvsSourceType,
+                                                 String syncableField, String path) {
 
         waitCondition(() -> projectConfigurationPage.getConnectionTypeList().stream().findFirst().get().isDisplayed());
         projectConfigurationPage.getConnectionTypeList().stream().filter(el -> el.getValue().equalsIgnoreCase(connectionType))

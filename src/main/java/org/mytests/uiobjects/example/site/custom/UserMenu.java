@@ -1,4 +1,4 @@
-package org.mytests.uiobjects.example.custom;
+package org.mytests.uiobjects.example.site.custom;
 
 import com.epam.jdi.light.asserts.generic.UIAssert;
 import com.epam.jdi.light.common.JDIAction;

@@ -1,4 +1,4 @@
-package org.mytests.uiobjects.example.custom;
+package org.mytests.uiobjects.example.site.custom;
 
 import com.epam.jdi.light.elements.common.UIElement;
 import com.epam.jdi.light.elements.interfaces.base.ICoreElement;

@@ -5,7 +5,7 @@ import com.epam.jdi.light.elements.complex.WebList;
 import com.epam.jdi.light.elements.composite.Section;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
 import lombok.Getter;
-import org.mytests.uiobjects.example.custom.IMenu;
+import org.mytests.uiobjects.example.site.custom.IMenu;
 
 import java.util.Optional;
 

@@ -13,8 +13,10 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.mytests.utils.User;
 
-import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
-import static org.mytests.uiobjects.example.site.SiteJdi.*;
+import static org.mytests.uiobjects.example.site.SiteJdi.dashboardPage;
+import static org.mytests.uiobjects.example.site.SiteJdi.landingPage;
+import static org.mytests.uiobjects.example.site.SiteJdi.projectConfigurationPage;
+
 
 @Listeners(TestNGListener.class)
 public class LoginTest implements TestsInit {

@@ -1,22 +1,22 @@
 package org.mytests.uiobjects.example.site.pages;
 
-import com.epam.jdi.light.elements.common.Label;
 import com.epam.jdi.light.elements.common.UIElement;
 import com.epam.jdi.light.elements.complex.WebList;
-import com.epam.jdi.light.elements.complex.dropdown.Dropdown;
 import com.epam.jdi.light.elements.complex.dropdown.DropdownSelect;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
-import com.epam.jdi.light.ui.html.elements.common.*;
-import com.epam.jdi.light.ui.html.elements.complex.MultiSelector;
-import lombok.Data;
+
+import com.epam.jdi.light.ui.html.elements.common.Button;
+import com.epam.jdi.light.ui.html.elements.common.Checkbox;
+import com.epam.jdi.light.ui.html.elements.common.FileInput;
+import com.epam.jdi.light.ui.html.elements.common.Icon;
+import com.epam.jdi.light.ui.html.elements.common.TextArea;
+import com.epam.jdi.light.ui.html.elements.common.TextField;
 import lombok.Getter;
 import org.mytests.uiobjects.example.site.sections.SideBar;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-@Data
+@Getter
 public class ProjectConfigurationPage extends CommonPage {
 
     @UI("nav.sidebar")

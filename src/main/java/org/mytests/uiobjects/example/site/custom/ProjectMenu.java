@@ -1,4 +1,4 @@
-package org.mytests.uiobjects.example.custom;
+package org.mytests.uiobjects.example.site.custom;
 
 import com.epam.jdi.light.asserts.generic.UIAssert;
 import com.epam.jdi.light.elements.base.UIBaseElement;
@@ -7,7 +7,6 @@ import com.epam.jdi.light.elements.complex.WebList;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class ProjectMenu extends UIBaseElement<ProjectMenu.ProjectMenuAssert> implements IMenu {
