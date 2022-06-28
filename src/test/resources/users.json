@@ -1,0 +1,37 @@
+[
+  {
+    "key" : "ADMIN",
+    "username" : "",
+    "password" : "",
+    "role": "admin",
+    "displayName": ""
+  },
+  {
+    "key" : "ADMIN2",
+    "username" : "",
+    "password" : "",
+    "role": "",
+    "displayName": ""
+  },
+  {
+    "key" : "AUTOMATOR",
+    "username" : "",
+    "password" : "",
+    "role": "",
+    "displayName": ""
+  },
+  {
+    "key" : "REVIEWER",
+    "username" : "",
+    "password" : "",
+    "role": "",
+    "displayName": ""
+  },
+  {
+    "key" : "QUALIFIER",
+    "username" : "",
+    "password" : "",
+    "role": "",
+    "displayName": ""
+  }
+]
