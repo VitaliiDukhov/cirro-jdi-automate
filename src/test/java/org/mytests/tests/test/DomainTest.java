@@ -14,14 +14,14 @@ import static org.mytests.uiobjects.example.site.SiteJdi.landingPage;
 
 public class DomainTest implements TestsInit {
 
-    @Test
+    @Test(testName = "For checking domain with different maven profiles")
     public void domainTest() {
         landingPage.open();
         landingPage.shouldBeOpened();
         Timer.sleep(2000);
     }
 
-    @Test
+    @Test(testName = "For validating users.json file")
     public void userTest() {
         List<String> keys = Arrays.asList("admin", "admin2", "reviewer", "automator", "qualifier");
         for (String key: keys) {

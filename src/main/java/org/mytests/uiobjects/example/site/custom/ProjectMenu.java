@@ -11,6 +11,11 @@ import java.util.stream.Collectors;
 
 public class ProjectMenu extends UIBaseElement<ProjectMenu.ProjectMenuAssert> implements IMenu {
 
+    /**
+     * Assertion for ProjectMenu
+     *
+     * @return assert as {@link ProjectMenuAssert}
+     */
     @Override
     public ProjectMenuAssert is() {
         return new ProjectMenuAssert().set(this);
@@ -21,6 +26,13 @@ public class ProjectMenu extends UIBaseElement<ProjectMenu.ProjectMenuAssert> im
         return getMenuItem(item, true);
     }
 
+    /**
+     * Method returns menu item
+     *
+     * @param item to look for
+     * @param exact {@code true} to look for strict equality, {@code false} - for containment
+     * @return item as {@link UIElement}
+     */
     public UIElement getMenuItem(String item, boolean exact) {
         List<UIElement> items = getMenuItems();
         if (exact) {
@@ -32,6 +44,13 @@ public class ProjectMenu extends UIBaseElement<ProjectMenu.ProjectMenuAssert> im
         }
     }
 
+    /**
+     * Method returns menu item by Prefix and Code
+     *
+     * @param prefix to look for
+     * @param code to look for
+     * @return item as {@link UIElement}
+     */
     public UIElement getProjectByPrefixAndCode(String prefix, String code) {
         WebList items = getMenuItems();
         List<String> toMatch = Arrays.asList(prefix, code);
@@ -49,6 +68,9 @@ public class ProjectMenu extends UIBaseElement<ProjectMenu.ProjectMenuAssert> im
         return menu.finds("a[role=menuitem]");
     }
 
+    /**
+     * Method performs click on 'Create new project' item in Project menu
+     */
     public void createProject() {
         expandMenu();
         UIElement createItem = getMenu().findFirst("a[href*='/projects/new']");
@@ -59,6 +81,9 @@ public class ProjectMenu extends UIBaseElement<ProjectMenu.ProjectMenuAssert> im
         }
     }
 
+    /**
+     * Assert class for ProjectMenu class
+     */
     public static class ProjectMenuAssert extends UIAssert<ProjectMenuAssert, ProjectMenu> {
 
     }

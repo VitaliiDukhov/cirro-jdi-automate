@@ -139,6 +139,12 @@ public class ProjectConfigurationPage extends CommonPage {
     @UI(".section-content a.btn")
     Button continueButton;
 
+    /**
+     * Hidden input field for file uploading
+     * Visibility validation turned off to make possible using .sendKeys()
+     *
+     * @return input as {@link FileInput}
+     */
     public FileInput getInputFile() {
         inputFile.core().strictSearch(false);
         inputFile.core().noValidation();
